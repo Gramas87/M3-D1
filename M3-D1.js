@@ -1,5 +1,13 @@
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
 
+let f1 = function (n1,n2) {
+   if (n1 === n2)
+(n1+n2)*3
+else 
+n1+n2
+}
+
+console.log(f1(2,2))
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
