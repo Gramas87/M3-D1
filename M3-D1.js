@@ -28,8 +28,7 @@ console.log(f2(25,50))
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
 let f3 = function(string,pos){
-
- string.substr(pos)
+return string.substr(0, pos) + string.substr(pos+1)
   }
 
 console.log(f3("hello",1))
@@ -150,13 +149,13 @@ console.log(f4(11,12,13))
 
     function differentCase(string){
         if (string.length < 3) {
-           return string.toUpperCase();
+        return string.toUpperCase();
         } else {
-           let first3 = string.substr(0,3)
-           first3 = first3.toLowerCase()
-           let theRest = string.substr(3)
-           theRest = theRest.toUpperCase();
-           return first3 + theRest
+        let first3 = string.substr(0,3)
+        first3 = first3.toLowerCase()
+        let theRest = string.substr(3)
+        theRest = theRest.toUpperCase();
+        return first3 + theRest
         }
     }
     
